@@ -8,7 +8,7 @@ function validate()
 { 
    if( document.StudentRegistration.textname.value === "" )
    {
-     alert( "Please provide your Name!" );
+     alert( "Please provide your First Name!" );
      document.StudentRegistration.textname.focus() ;
      return false;
    }
@@ -113,12 +113,13 @@ function validate()
    
    }   
    
-  if( document.StudentRegistration.mobileno.value === "" )
+  if( StudentRegistration.mobileno.value === "" )
    {
      alert( "Please provide a Mobile No in the format 123." );
-     document.StudentRegistration.mobileno.focus() ;
+     
      return false;
    }
+   
    return( true );
 }
 
